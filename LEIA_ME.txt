@@ -1,0 +1,104 @@
+Universidade Federal do Pampa- Unipampa
+Práticas de desenvolvimento de Software 01/2012
+Prof.: Wagner Reck
+
+----------------------------------------------------------------
+
+Biblioteca e aplicação de cartas
+by
+Diessica Goulart 	2813193
+Laraíne Ramos		2813143
+
+----------------------------------------------------------------
+
+ Tarefa 01: Biblioteca e aplicação de cartas
+  Game Card Gold Game : Teste sua sorte
+
+----------------------------------------------------------------
+
+INDICE:
+1 - Descrição do problema
+2 - Configurações do sistema onde foi Implementado
+3 - Como Executar
+4 - Como Jogar
+5 - ARQUIVOS PRESENTES NESTE TRABALHO
+
+----------------------------------------------------------------
+
+
+1 - Descrição do problema
+
+Desenvolvimento de uma aplicação que faça uso de uma biblioteca, ou seja,
+criar a biblioteca de cartas e fazer uso dos metodos definidos.
+Definir a licença do aplicativo.
+Descrever o desenvolvimento.
+
+----------------------------------------------------------------
+
+2 - Configurações do sistema onde foi Implementado
+
+Linguagem de Programação: Java
+Ambiente de Desenvolvimento: Windows 7
+
+----------------------------------------------------------------
+
+3 - Como Executar:
+
+Primeiramente copie a pasta "baralho" para um local em seu computador, por exemplo
+para unidade C.
+Feito isto, acesse ela atravez do terminal com o comando:
+CD C:\
+
+No terminal e execute o seguinte comando de inicialização da máquina Java (conforme a versão em seu PC):
+"set PATH=%PATH%;C:\Arquivos de Programas\Java\jdk1.6.0_25\bin"
+Terminal:
+"Javac Main.java"
+"Java Main"
+
+Seguir as instruções e jogar:
+
+----------------------------------------------------------------
+
+4 - Como Jogar:
+
+ Game Card Gold Game : Teste sua sorte
+
+ > Primeiramente será solicitado o seu nome de jogador;
+ > Será exibido o nome de seu adversário;
+ > As cartas serão embaralhadas;
+ > Será solicitado que você defina onde deseja cortar o baralho;
+ > Será solicitado que você escolha se deseja retirar a carta do topo ou do final do monte;
+ > Se sua carta for superior você vence a rodada e consequentemente a sua pontuação aumenta;
+ > O numero de rodadas é até não haver mais cartas no seu baralho, ou seja, 52 rodadas.
+ > As cartas com maior peso são as de Ouro, ou seja, Você só irá perder com uma carta de Ouro para Outra que seja de ouro
+as outras tem peso igaul a sua numeração, são as cartas normais.
+ > Divirta-se e seja o melhor! :)
+
+-----------------------------------------------------------------
+
+5 - ARQUIVOS PRESENTES NESTE TRABALHO:
+
+*Uma biblioteca para manipulação básica de cartas de um baralho com sua documentação no código, 
+  >> Presente na pasta biblioteca, junto com as explicações do código e o arquivo "baralho.jar"
+
+*uma aplicação simples que faz uso dessa biblioteca,
+  >> Pasta Baralho, onde está todos os arquivos que implementam o jogo.
+
+*arquivos de projeto que serão usados para a construção da biblioteca e do aplicativo,
+  >> Criamos um projeto em RTF que pode ser impresso com ajuda do programa doxygen.
+
+*um arquivo leia-me (README) que apresenta uma visão geral do projeto e como deve ser feita a construção  do mesmo.
+  >> Este arquivo que apresenta todos os dados importantes da aplicação.
+
+*um arquivo AUTHORS com o nome e contato dos autores (2 no máximo)
+  >> Presente nesta pasta
+
+*um arquivo COPYING com a licença de uso do software
+  >> Presente nesta pasta
+
+*uma pasta com o projeto em HTML, criado com o programa doxygen
+  >> Com esta visualização podemos ver a implementação do projeto diretamente
+no navegador.
+
+-----------------------------------------------------------------
+

@@ -1,0 +1,4 @@
+NOTA:
+ >>  COmo as bibliotecas em java são convertidas em um arquivo .jar que contem todas as classes e suas definições.
+Na pasta "biblioteca" podemos ver os mesmos separadamente e a biblioteca baralho.jar
+ >> Temos então a Classe Baralho, Classe Carta, Classe Main que fazem parte da biblioteca.

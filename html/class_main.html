@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Card Gold Game: Teste sua sorte: Referência à classe Main</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Gerado por Doxygen 1.7.4 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Card Gold Game: Teste sua sorte&#160;<span id="projectnumber">1.0</span></div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;componentes</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;dos&#160;componentes</span></a></li>
+      <li><a href="functions.html"><span>Componentes&#160;membro</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">Membros públicos estáticos</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe Main</div>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="Main" -->
+<p><a href="class_main-members.html">Mostrar lista completa dos membros</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main.html#a8a5d0f827edddff706cc0e6740d0579a">main</a> (String[] args)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">O metodo main, responsavel por iniciar a chamada dos metodos.  <a href="#a8a5d0f827edddff706cc0e6740d0579a"></a><br/></td></tr>
+</table>
+<hr/><h2>Documentação dos métodos</h2>
+<a class="anchor" id="a8a5d0f827edddff706cc0e6740d0579a"></a><!-- doxytag: member="Main::main" ref="a8a5d0f827edddff706cc0e6740d0579a" args="(String[] args)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Main.main </td>
+          <td>(</td>
+          <td class="paramtype">String[]&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>O metodo main, responsavel por iniciar a chamada dos metodos. </p>
+<p>Inicia a partida do jogo</p>
+<dl><dt><b>Parâmetros:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>the command line arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><pre class="fragment">                                           {
+        List&lt;String&gt; adversarios = <span class="keyword">new</span> ArrayList&lt;String&gt;();
+        adversarios.add(<span class="stringliteral">&quot;Ares&quot;</span>);
+        adversarios.add(<span class="stringliteral">&quot;Medeia&quot;</span>);
+        adversarios.add(<span class="stringliteral">&quot;Karonte&quot;</span>);
+        Scanner entrada = <span class="keyword">new</span> Scanner(System.in);
+        System.out.println(<span class="stringliteral">&quot;Card Gold Game : Teste sua sorte&quot;</span>);
+        System.out.println(<span class="stringliteral">&quot;Qual o seu nome?&quot;</span>);
+        String nome = entrada.nextLine();
+        <a class="code" href="class_jogador.html">Jogador</a> j = <span class="keyword">new</span> <a class="code" href="class_jogador.html">Jogador</a>(nome);
+        <a class="code" href="class_jogador.html">Jogador</a> a = <span class="keyword">new</span> <a class="code" href="class_jogador.html">Jogador</a>(adversarios.get((<span class="keywordtype">int</span>)(Math.random() * adversarios.size() )));
+        System.out.println(<span class="stringliteral">&quot;Ola &quot;</span>+j.<a class="code" href="class_jogador.html#a1d23476bdbf727fe18829267c302d2b7">getNome</a>()+ <span class="stringliteral">&quot; voce vai jogar com &quot;</span>+a.<a class="code" href="class_jogador.html#a1d23476bdbf727fe18829267c302d2b7">getNome</a>());
+        
+                System.out.println(<span class="stringliteral">&quot;&gt;&gt; Embaralhando as cartas....\n&quot;</span>);
+        <span class="comment">//embaralha os dois baralhos</span>
+       j.<a class="code" href="class_jogador.html#abbb011c2678d0bf83ffb8edc25cbf8e5">getBaralho</a>().<a class="code" href="class_baralho.html#a74cc2cfb1867f839b40bc91eeedd5ffd">embaralhar</a>();
+       a.<a class="code" href="class_jogador.html#abbb011c2678d0bf83ffb8edc25cbf8e5">getBaralho</a>().<a class="code" href="class_baralho.html#a74cc2cfb1867f839b40bc91eeedd5ffd">embaralhar</a>();
+
+       <span class="comment">//vai cortar o baralho</span>
+       <span class="keywordtype">int</span> p1 = (int) (1+ (Math.random() * 52));
+       System.out.println(<span class="stringliteral">&quot;Escolha a posicao em que quer cortar o baralho de &quot;</span>+a.<a class="code" href="class_jogador.html#a1d23476bdbf727fe18829267c302d2b7">getNome</a>());
+       <span class="keywordtype">int</span> p2 = entrada.nextInt();
+
+       j.<a class="code" href="class_jogador.html#abbb011c2678d0bf83ffb8edc25cbf8e5">getBaralho</a>().<a class="code" href="class_baralho.html#a91c9b01611bc9be06ba9beef9f3bee1e">cortaBaralho</a>(p1);
+       a.<a class="code" href="class_jogador.html#abbb011c2678d0bf83ffb8edc25cbf8e5">getBaralho</a>().<a class="code" href="class_baralho.html#a91c9b01611bc9be06ba9beef9f3bee1e">cortaBaralho</a>(p2);
+
+       System.out.println(<span class="stringliteral">&quot;voce cortou o baralho de &quot;</span>+a.<a class="code" href="class_jogador.html#a1d23476bdbf727fe18829267c302d2b7">getNome</a>()+<span class="stringliteral">&quot; na posicao &quot;</span>+p2);
+       System.out.println(a.<a class="code" href="class_jogador.html#a1d23476bdbf727fe18829267c302d2b7">getNome</a>()+<span class="stringliteral">&quot; cortou o baralho de &quot;</span>+j.<a class="code" href="class_jogador.html#a1d23476bdbf727fe18829267c302d2b7">getNome</a>()+<span class="stringliteral">&quot; na posicao &quot;</span>+p1);
+       <span class="keywordtype">int</span> i = 1;
+       <span class="keywordtype">int</span> resp;
+       <span class="keywordflow">while</span>(j.<a class="code" href="class_jogador.html#abbb011c2678d0bf83ffb8edc25cbf8e5">getBaralho</a>().<a class="code" href="class_baralho.html#af709ab13f4124eb5687dc04781a28518">getTamanho</a>() != 0 || a.<a class="code" href="class_jogador.html#abbb011c2678d0bf83ffb8edc25cbf8e5">getBaralho</a>().<a class="code" href="class_baralho.html#af709ab13f4124eb5687dc04781a28518">getTamanho</a>() != 0){
+           System.out.println(<span class="stringliteral">&quot;-----------RODADA &quot;</span>+i+<span class="stringliteral">&quot;--------------&quot;</span>);
+           System.out.println(<span class="stringliteral">&quot;Pressione 1: tirar carta do topo ou 2: tirar carta de baixo&quot;</span>);
+           resp = entrada.nextInt();
+            <span class="comment">//pega uma carta de cada, compara o maior ganha pontos</span>
+           <a class="code" href="class_carta.html">Carta</a> cj, ca;
+           <span class="keywordflow">if</span>(resp == 1){
+                cj = j.<a class="code" href="class_jogador.html#abbb011c2678d0bf83ffb8edc25cbf8e5">getBaralho</a>().<a class="code" href="class_baralho.html#a2bf3c7803d740383d27105611ed8d3d1">getCartaTopo</a>();
+           }<span class="keywordflow">else</span>{
+                cj = j.<a class="code" href="class_jogador.html#abbb011c2678d0bf83ffb8edc25cbf8e5">getBaralho</a>().<a class="code" href="class_baralho.html#a04e728a0c738d3ae4450fdc9e18127e4">getCartaBaixo</a>();
+           }
+           <span class="keywordtype">int</span> resp2 = (int) (1+ (Math.random() * 2));
+           <span class="keywordflow">if</span>(resp2 == 1){
+                ca = a.<a class="code" href="class_jogador.html#abbb011c2678d0bf83ffb8edc25cbf8e5">getBaralho</a>().<a class="code" href="class_baralho.html#a2bf3c7803d740383d27105611ed8d3d1">getCartaTopo</a>();
+           }<span class="keywordflow">else</span>{
+                ca = a.<a class="code" href="class_jogador.html#abbb011c2678d0bf83ffb8edc25cbf8e5">getBaralho</a>().<a class="code" href="class_baralho.html#a04e728a0c738d3ae4450fdc9e18127e4">getCartaBaixo</a>();
+           }
+           System.out.println(j.<a class="code" href="class_jogador.html#a1d23476bdbf727fe18829267c302d2b7">getNome</a>()+<span class="stringliteral">&quot; jogou &quot;</span>+cj.<a class="code" href="class_carta.html#a43e6a93d3f80d8a3bb1c0461556fcb37">toString</a>()+ <span class="stringliteral">&quot; : &quot;</span>+a.<a class="code" href="class_jogador.html#a1d23476bdbf727fe18829267c302d2b7">getNome</a>()+<span class="stringliteral">&quot; jogou &quot;</span>+ca.<a class="code" href="class_carta.html#a43e6a93d3f80d8a3bb1c0461556fcb37">toString</a>());
+           <span class="keywordflow">if</span>(cj.<a class="code" href="class_carta.html#aedf23dc05038ce31cfd386272d167fd3">getNaipe</a>().equals(<span class="stringliteral">&quot;ouros&quot;</span>) &amp;&amp; !(ca.<a class="code" href="class_carta.html#aedf23dc05038ce31cfd386272d167fd3">getNaipe</a>().equals(<span class="stringliteral">&quot;ouros&quot;</span>))){
+               j.<a class="code" href="class_jogador.html#af61d409f6cc5075adae6ffd1e9095575">aumentaPontos</a>(cj.<a class="code" href="class_carta.html#a0456d4997d680894a16b9059ae5babf1">getValor</a>());
+               System.out.println(j.<a class="code" href="class_jogador.html#a1d23476bdbf727fe18829267c302d2b7">getNome</a>()+<span class="stringliteral">&quot; GOLD&quot;</span>);
+           }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(ca.<a class="code" href="class_carta.html#aedf23dc05038ce31cfd386272d167fd3">getNaipe</a>().equals(<span class="stringliteral">&quot;ouros&quot;</span>) &amp;&amp; !(cj.<a class="code" href="class_carta.html#aedf23dc05038ce31cfd386272d167fd3">getNaipe</a>().equals(<span class="stringliteral">&quot;ouros&quot;</span>))){
+               a.<a class="code" href="class_jogador.html#af61d409f6cc5075adae6ffd1e9095575">aumentaPontos</a>(ca.<a class="code" href="class_carta.html#a0456d4997d680894a16b9059ae5babf1">getValor</a>());
+               System.out.println(a.<a class="code" href="class_jogador.html#a1d23476bdbf727fe18829267c302d2b7">getNome</a>()+<span class="stringliteral">&quot; GOLD&quot;</span>);
+           }<span class="keywordflow">else</span>{
+               <span class="keywordflow">if</span>(cj.<a class="code" href="class_carta.html#a0456d4997d680894a16b9059ae5babf1">getValor</a>() &gt; ca.<a class="code" href="class_carta.html#a0456d4997d680894a16b9059ae5babf1">getValor</a>()){
+                   j.<a class="code" href="class_jogador.html#af61d409f6cc5075adae6ffd1e9095575">aumentaPontos</a>(1);
+               }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(cj.<a class="code" href="class_carta.html#a0456d4997d680894a16b9059ae5babf1">getValor</a>() == ca.<a class="code" href="class_carta.html#a0456d4997d680894a16b9059ae5babf1">getValor</a>()){
+                   
+               } <span class="keywordflow">else</span> {
+                   a.<a class="code" href="class_jogador.html#af61d409f6cc5075adae6ffd1e9095575">aumentaPontos</a>(1);
+               }
+           }
+           System.out.println(<span class="stringliteral">&quot;Pontos[&quot;</span>+j.<a class="code" href="class_jogador.html#a1d23476bdbf727fe18829267c302d2b7">getNome</a>()+<span class="stringliteral">&quot; : &quot;</span>+j.<a class="code" href="class_jogador.html#a490c553155763ceaaba3ea41686222fa">getPontos</a>()+<span class="stringliteral">&quot; | &quot;</span>+a.<a class="code" href="class_jogador.html#a1d23476bdbf727fe18829267c302d2b7">getNome</a>()+<span class="stringliteral">&quot; : &quot;</span>+a.<a class="code" href="class_jogador.html#a490c553155763ceaaba3ea41686222fa">getPontos</a>()+<span class="stringliteral">&quot;]&quot;</span>);
+           i++;
+        }
+       System.out.println(<span class="stringliteral">&quot;--------------------------&quot;</span>);
+       <span class="keywordflow">if</span>(j.<a class="code" href="class_jogador.html#a490c553155763ceaaba3ea41686222fa">getPontos</a>() &gt; a.<a class="code" href="class_jogador.html#a490c553155763ceaaba3ea41686222fa">getPontos</a>()){
+           System.out.println(j.<a class="code" href="class_jogador.html#a1d23476bdbf727fe18829267c302d2b7">getNome</a>()+<span class="stringliteral">&quot; WINS&quot;</span>);
+       }<span class="keywordflow">else</span>{
+           System.out.println(a.<a class="code" href="class_jogador.html#a1d23476bdbf727fe18829267c302d2b7">getNome</a>()+<span class="stringliteral">&quot; WINS&quot;</span>);
+       }
+        System.out.println(<span class="stringliteral">&quot;--------------------------&quot;</span>);
+
+    }
+</pre></div>
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
+<li>C:/baralho/<a class="el" href="_main_8java.html">Main.java</a></li>
+</ul>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Gerado em Wed May 16 2012 19:58:33 para Card Gold Game: Teste sua sorte por&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
+</body>
+</html>
